@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    padding: 15px;
+    background: #000;
+    color: white;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar li a{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    margin: 2px 20px;
+    font-size: 1.1rem;
+    /* font-weight: 600; */
+    text-decoration: none;
+    padding: 7px 11px;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+/* #introsection::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    background: url("bg11.jpeg");
+    height: 100%;
+    width: 100% ;
+} */
+
+#introsection{
+    color: white;
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    background: center/cover no-repeat url("/static/bg3.jpg") ;
+    height: 300px;
+    background-color: aqua  ;
+}
+
+#introsection h1{
+    padding-bottom: 128px;
+}
+
+#sponsersection{
+    height: 300px;
+}
+
+#footer{
+    height: 100px;
+}

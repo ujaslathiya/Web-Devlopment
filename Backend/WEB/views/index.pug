@@ -1,0 +1,26 @@
+doctype html 
+html 
+    head 
+        title Pug Tutorial 
+        style 
+            include ../static/style.css 
+    body 
+        nav#navbar.top 
+            ul 
+                li #[a(href="/") Home ]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class info]
+                li #[a(href="/") Contact]
+        
+        section#introsection
+            h1 Ujas's Dance Academy
+
+        section#activitysection 
+         |section for activity
+
+        footer#footer 
+         |our footer here
+
+    script 
+        include ../static/script.js 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid with media query</title>
+    
+    <style>
+
+
+        .container{
+            display: grid;
+            grid-gap: 10px;
+            background-color: #f2f2f2;
+            grid-template-areas: 
+            'navbar navbar navbar navbar navbar'
+            'section section section section aside'
+            'footer footer footer footer footer';
+        }
+
+        .item{
+            border: 2px solid black;
+            background: skyblue;
+        }
+
+        #navbar a{
+            text-decoration: none;
+            padding: 5px 10px;
+            color: black;
+        }
+        #navbar{
+            text-align: center;
+            font-size: 1.3rem;
+            grid-area: navbar;   
+        }
+        #section-1{
+            grid-area: section;   
+        }
+        #aside{
+            grid-area: aside;   
+        }
+        #footer{
+            text-align: center;
+            grid-area: footer;   
+        }
+
+        @media only screen and (max-width: 800px){
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar navbar'
+            'section section section section section'
+            'aside aside aside aside aside'
+            'footer footer footer footer footer';
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="nav item" id="navbar">
+                <a href="#" target="_blank">Home</a>
+                <a href="#" target="_blank">Services</a>
+                <a href="#" target="_blank">About us</a>
+                <a href="#" target="_blank">contact us</a>
+        </div>
+        <div class="section item" id="section-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero accusantium asperiores repellendus totam labore, fuga ducimus officiis quaerat molestias, laborum, nisi dolore provident ex dicta! Temporibus dolore nesciunt veniam, inventore, et sapiente voluptas vel itaque eligendi ut deleniti corrupti numquam? Eligendi suscipit quaerat blanditiis doloremque. Quia reiciendis vero nobis neque beatae est perspiciatis tenetur quaerat soluta recusandae dignissimos porro, fugiat praesentium deserunt vel eum sed laboriosam placeat nemo libero dolorem inventore iste minima! Voluptatem optio laboriosam eligendi excepturi pariatur corrupti consequuntur itaque provident voluptate illo tempora eius cupiditate unde aliquam, assumenda similique cum veritatis repellat ipsa dolorem nisi blanditiis explicabo. Quia est corporis dolores autem, eum, in, nihil reiciendis magni ducimus quasi reprehenderit molestias error libero ullam ipsum repudiandae exercitationem facere architecto. Omnis iure illum consequatur vero esse perferendis sit ex quisquam sapiente ab, ducimus, corrupti qui blanditiis porro, quae dolorem consequuntur suscipit laboriosam ad est? Inventore esse neque totam nemo nesciunt error eveniet est facilis, quo doloremque ut optio sapiente necessitatibus dicta eos! Non, officia dolore eius molestias ad corrupti odit, iste soluta harum aut inventore dolorem illum optio quaerat distinctio maxime repellat, rerum provident eos. Ratione quos incidunt adipisci. Quos maiores neque ipsa, libero et distinctio quaerat repudiandae perferendis culpa praesentium nostrum rem in dolor veritatis perspiciatis nesciunt. Minima, autem quidem? Reprehenderit nisi nulla blanditiis optio consectetur voluptatum rem excepturi voluptatibus, iure omnis ducimus! Accusamus libero corrupti maiores vitae nesciunt labore, odio quod optio accusantium atque ipsa in aspernatur? Laborum, maxime debitis. Sunt laborum, necessitatibus nesciunt vero nam quidem maxime quibusdam natus voluptates blanditiis iusto explicabo, totam nobis culpa omnis dolore quisquam aliquid error quia voluptate ab consequatur fugit at. Officia doloribus eaque autem quae sint aperiam unde eos quidem facere, harum facilis impedit natus voluptates non numquam rerum laborum optio quia corrupti blanditiis? Sed ducimus odit possimus?        </div>
+        <div class="aside item" id="aside-1">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nesciunt facere ut, nemo non libero impedit illo necessitatibus hic inventore, pariatur saepe quo labore, soluta nostrum accusantium vitae placeat amet commodi corporis. Architecto cum exercitationem deleniti? A, eum cumque. Excepturi, autem neque omnis tempora vitae ex itaque deleniti voluptate assumenda voluptatibus similique odio nesciunt voluptates eveniet cum quis nihil libero, ratione, cupiditate repudiandae quasi commodi magni sequi consectetur. Corporis reiciendis assumenda sapiente repellendus pariatur culpa placeat ut, iure unde sed.        </div>
+        <div class="footer item" id="footer">
+            Copyright &copy; All rights are reserved to Ujas Lathiya
+        </div>
+    </div>
+
+</body>
+</html>

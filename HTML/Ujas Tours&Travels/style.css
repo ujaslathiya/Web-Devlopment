@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body {
+    background: url(bg11.jpeg);
+} */
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(bg11.jpeg);
+    z-index: -23;
+}
+
+.container {
+    display: block;
+    margin: 0px;
+    padding: 7px;
+}
+
+li {
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    width: auto;
+    float: left;
+    margin: 10px;
+    padding: 5px 30px;
+    font-weight: 700;
+    font size: 250%;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: bisque;
+    font-size: 102%;
+}
+
+li a:active {
+    font-size: 90%;
+}
+
+/* li:active{
+    font-size: 90%;
+} */
+
+.navbar {
+    position: fixed;
+    font-size: 110%;
+    overflow: auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    border-radius: 10px;
+    width: 99%;
+    background: rgb(0, 0, 0);
+}
+
+.searchbox input {
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.searchbox input:hover {
+    border: 2px solid white;
+}
+
+.searchbox {
+    margin: 5px 50px;
+    padding: 5px 10px;
+    float: right;
+}
+
+.search_btn:active {
+    border: 2px solid white;
+}
+
+.search_btn {
+    border-radius: 5px;
+    border: 2px solid black;
+    background: #f2f2f2;
+    padding: 2px 8px;
+    border: none;
+    background: none;
+}
+
+.search_btn:hover {
+    height: 28px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.textbox {
+    margin: 270px 131px 12px 800px;
+    color: black;
+}
+
+.textbox h5 {
+    margin: 30px auto 0px;
+    width: 400px;
+}
+
+.textbox h1 {
+    border-radius: 10px;
+    /* background-color: rgb(0, 0, 0, 0.8); */
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border: 2px solid black/; */
+    text-align: center;
+    padding: 5px;
+    width: 400px;
+    margin: 30px auto;
+    font-size: 260%;
+    font-weight: 900;
+}
+
+.textbox input {
+    border: 1.5px solid black;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 400px;
+    margin: 10px auto;
+    line-height: 25px;
+}
+
+.textbox input:hover {
+    background: #f2f2f2;
+}
+
+.btn {
+    background: black;
+    color: white;
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+    line-height: 30px;
+    border-radius: 5px;
+    ;
+}
+
+.btn:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}

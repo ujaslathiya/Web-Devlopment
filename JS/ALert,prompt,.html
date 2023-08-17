@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in javascript</title>
+
+    <style>
+        #btn{
+            margin: 20px 10px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            display: block;
+            border: 2px solid white;
+            background: black;
+            color: white;
+        }
+        #time{
+            margin: 20px auto;
+            padding: 5px 10px;
+            font-size: 200%;
+            border-radius: 10px;
+            display: block;
+            border: 2px solid white;
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>This is heading</h1>
+        <div class="content" id="time">
+
+        </div>
+        <div class="text" id="text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, ex optio esse quas modi est rem vero accusantium aliquam voluptatem odit laudantium similique sequi maiores at vel, sint praesentium! Labore ducimus quis, ipsum assumenda, rerum iure nihil nobis quisquam alias sequi, magnam distinctio cumque quos totam voluptate? Non dolorum praesentium hic! Repellendus tenetur dolores incidunt. Qui molestiae eveniet fugit nobis perspiciatis consequuntur, eaque ipsam. Deserunt necessitatibus hic reiciendis, voluptas dolores voluptatum culpa delectus minus voluptates natus rerum iste eveniet dolore accusamus saepe facilis consectetur? Sunt odit aut harum dolor minus nisi, dolore excepturi, et sequi nostrum iure ratione sed quos.
+        </div>
+    </div>
+    
+    <button id="btn" onclick="togglehide()">
+        Show/Hide
+    </button>
+</body>
+
+<script>
+
+    // a = alert("this is alert ")
+
+    // a = prompt("What is your name?","Guest");
+    // b = document.getElementById('content');
+    // b.innerHTML = `<h2>Name of our user is ${a} </h2>`;
+    // console.log(b);
+    // console.log("Name of our user is " + a);
+
+    // let deletepost = confirm("Are you sure to delete the post");
+
+    // if(deletepost){
+    //     console.log("Your post has been deleted successfully");
+    // } else {
+    //     console.log("Your post has been deleted successfully");
+    // }
+    // let a = ['ujas', 'hardik', 'mahek', 'jigar', 'divyesh']
+
+    // a.forEach(function f(element){
+    //          console.log("hello "+ element);
+    // });
+
+
+    // // for(element of a){
+    // //     console.log("hello " + element + ' How are you?');
+    // // }
+
+
+    // let containers = document.getElementsByClassName('container');
+    // console.log(containers);
+
+    function togglehide() {
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('text');
+        if(para.style.display != 'none'){
+            para.style.display = 'none';
+        } else {
+            para.style.display = 'block';
+        }
+    }
+    
+    // let para = document.getElementById('text');
+
+    // para.addEventListener('mouseover', function run(){
+    //     console.log("mouse inside");
+    // }); 
+    // para.addEventListener('mouseout', function run(){
+    //     console.log("mouse outside");
+    // }); 
+
+
+    // para.addEventListener('mouseover', function run(){
+    //     alert("mouse inside");
+    // }); 
+    // para.addEventListener('mouseout', function run(){
+    //     alert("mouse outside");
+    // }); 
+    
+    function greet(){
+        console.log("Hello Good morning");
+    }
+
+    // setTimeout(greet, 1000);
+
+    // setInterval(greet, 1000);
+    
+    // timeout = setTimeout(greet,5000);
+    // clearTimeout(timeout);
+
+    function clk(){
+
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+
+    }
+
+    setInterval(clk, 1000);
+    
+</script>
+
+</html>
