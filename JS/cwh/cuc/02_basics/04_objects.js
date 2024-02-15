@@ -83,7 +83,7 @@ const JsUser = {
 }
 
 console.log(Object.keys(JsUser)); // retrun array of keys of an object
-console.log(Object.keys(JsUser)); // retrun array of keys of an object
+console.log(Object.values(JsUser)); // retrun array of keys of an object
 console.log(Object.entries(JsUser)); // retrun array of key-value pair of an object 2D array 
 
 console.log(JsUser.hasOwnProperty('logInDays')); // whether object contain described property or not
