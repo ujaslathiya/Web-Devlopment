@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent child relation in DOM Tree</title>
+</head>
+<body>
+
+    <div class="parent" id="week">
+        <h1 class="day">Monday</h1>
+        <h1 class="day">Tuesday</h1>
+        <h1 class="day">Wednesday</h1>
+        <h1 class="day">Thursday</h1>
+    </div>
+
+</body>
+
+
+<script>
+    const item = document.querySelector('.parent');
+    // console.log(item);
+
+    // console.log(item.children);
+    // console.log(item.children[1].innerHTML);
+
+    // for (let i = 0; i < item.children.length; i++) {
+    //     const element = item.children[i].innerHTML;
+    //     console.log(element);
+    // }
+
+    const item2 = document.querySelector('.day');
+    // console.log(item2);
+
+    // console.log(item2.parentElement);
+
+    // console.log(item2.nextElementSibling);
+    // console.log(item2.nextElementSibling.nextElementSibling);
+
+    console.log(item.childNodes); // 9 child nodes
+
+
+</script>
+
+</html>

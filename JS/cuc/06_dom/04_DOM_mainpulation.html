@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body style="background-color: #f2f2f2; color: black;" >
+
+    <ul class="Language">
+        <li>Python</li>
+    </ul>
+
+
+</body>
+
+<script>
+
+    // ADD new node
+    function addLanguage(lang) {
+        const new_lang = document.createElement('li');
+        new_lang.innerHTML = `${lang}`;
+        document.querySelector('.Language').appendChild(new_lang);
+    }
+
+    addLanguage("Javascript");
+    addLanguage("C++");
+
+    // ADD new node in optimize manner
+
+    function addLanguageOpt(lang) {
+        const new_lang = document.createElement('li');
+        const temp_node = document.createTextNode(lang);
+        new_lang.appendChild(temp_node);
+        document.querySelector('.Language').appendChild(new_lang); 
+    }
+
+    addLanguageOpt("Node js")
+
+    // Edit
+
+    function changeLanguage(lang) {
+        const old_lang = document.querySelector('li:nth-child(2)');
+        const new_li = document.createElement('li');
+        new_li.textContent = lang;
+        old_lang.replaceWith(new_li);
+    }
+
+    changeLanguage("C language")
+
+    // Edit 
+
+    const first_lang = document.querySelector('li:first-child');
+    first_lang.outerHTML = '<li>TypeScript</li>'
+
+    // Remove 
+
+    const lang = document.querySelector('li:last-child');
+    lang.remove();
+
+</script>
+</html>
