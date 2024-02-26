@@ -1,0 +1,32 @@
+.button{
+    font-size: 50px;
+    padding: 50px;
+    margin: 20px;
+    border: 2px solid black;
+    color: black;
+}
+
+body{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.title{
+    margin-bottom: 80px;    
+}
+
+.info{
+    margin-top: 80px;
+}
+
+#grey{
+    background-color: grey;
+}
+#white{
+    background-color: white;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
