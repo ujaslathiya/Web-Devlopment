@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+.navbar{
+    position: fixed;
+    overflow: auto;
+}
+
+.container{
+    display: block;
+    margin-left: 9px;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+
+li{
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    width: auto;
+    float: left;
+    margin: 10px;
+    padding: 3px 25px;
+    font-weight: 700;
+}
+
+.navbar {
+    position: fixed;
+    font-size: 110%;
+    overflow: auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    border-radius: 10px;
+    width: 97vw;
+    background: rgb(0, 0, 0);
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.title{
+    margin-top: 66px;
+    margin-left: 22px;
+}
+
+form p{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+form input{
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 20%;
+    padding: 5px;
+}
+
+form button{
+    border: 1px solid black;
+    margin-left: 16px;
+    width: 28.7%;
+    padding: 7px;
+    margin-top: 20px;
+    border: 2px solid black;
+    font-size: 120%;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#result{
+    display: block;
+    width: 97vw;
+    margin: 10px;
+    padding: 10px;
+    font-size: 150%;
+    font-weight: 900;
+    color: black;
+}
+
+button:hover{
+    background-color: white;
+
+}
+
+.container2{
+    margin: 20px;
+}
+
+.container2 p{
+    margin-top: 5px;
+    font-size: 120%;
+}
