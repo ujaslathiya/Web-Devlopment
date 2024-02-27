@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+
+    <style>
+        body{
+            margin: 20px;
+            background-color: #f2f2f2;
+        }
+
+    </style>
+</head>
+<body>
+    
+    
+    <div class="clock" style="font-size: 110px; font-weight: 900; margin-left: 107px; margin-top: 250px;">Current Time : <span id="clock"></span></div>
+
+
+</body>
+
+<script>
+
+    const clock = document.getElementById('clock');
+
+    setInterval(() => {
+        let date = new Date();
+        clock.innerHTML = date.toLocaleTimeString();
+    }, 1000);
+</script>
+</html>
