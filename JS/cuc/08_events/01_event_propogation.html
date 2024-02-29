@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JavaScript</title>
+
+    <style>
+        .imgs {
+            height: 140px;
+            width: 140px;
+        }
+
+        ul {
+            margin-top: 50px;
+            list-style: none;
+        }
+
+        li {
+            margin: 15px;
+            display: inline;
+        }
+
+        #link {
+            text-align: center;
+            font-size: 300%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title"> Learning Events in JavaScript</h1>
+    </div>
+
+    <div id="images">
+        <ul>
+            <li><img src="cropped logo.jpg" alt="#" id="logo" class="imgs"></li>
+            <li><img src="unnamed.jpg" alt="#" id="ujas" class="imgs"></li>
+            <li><img src="thumb-1920-429933.jpg" alt="#" id="rollsroyce" class="imgs"></li>
+            <li><img src="wp7063563.webp" alt="#" id="itachi" class="imgs"></li>
+            <li><a id="link" href="https://github.com/ujaslathiya?tab=repositories">Github</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+
+    // document.getElementById('rollsroyce').addEventListener('click',function(e){
+    //     alert('rollsroyce clicked');
+    // })
+
+    // document.getElementById('itachi').onclick = function () {
+    //     alert("Itachi Clicked")
+    // }
+
+    // Event to Explore
+
+    // Timestamp, typing, preventDefault()
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+
+    // Event Propogation
+
+    // -- Event Bubbuling - bottom-up
+    // -- Event Capturing - top-bottom
+    // -- stopPropogation() -- stop
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log('Images is clicked');
+    // }, true) // Event Capturing (true)
+
+    // document.getElementById('itachi').addEventListener('click',function(e){
+    //     console.log(('Itachi is clicked'));
+    // }, true) 
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log('Images is clicked');
+    // }, false) // Event Bubbling (false) -- Default
+
+    // document.getElementById('itachi').addEventListener('click',function(e){
+    //     console.log(('Itachi is clicked'));
+    // }, false) 
+
+    // document.getElementById('itachi').addEventListener('click',function(e){
+    //     console.log(('Itachi is clicked'));
+    //     e.stopPropagation();
+    // }, false) 
+
+    // document.getElementById('link').addEventListener('click',function(e){
+    //     console.log("link clicked");
+    //     e.preventDefault();
+    // })
+
+    document.querySelector('#images').addEventListener('click', function (e) {
+        if (e.target.tagName == 'IMG') {
+            let removeIt = e.target.parentNode
+            removeIt.remove();
+        }
+    })
+
+</script>
+
+</html>
