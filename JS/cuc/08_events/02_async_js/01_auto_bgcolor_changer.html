@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto BG color changer</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">
+            Automatic Background changer
+        </h1>
+    </div>
+    <input type="button" id="Start" value="Start">
+    <input type="button" id="Stop" value="Stop">
+</body>
+
+<script>
+    const bg = document.body;
+    const st = document.getElementById('Start');
+    const stp = document.getElementById('Stop');
+    let intervalId;
+
+    function randomColor() {
+        const hex = '0123456789ABCDEF';
+        let random_color = '#'
+
+        for (let num = 0; num < 6; num++) {
+            let i = Math.floor(Math.random() * 16);
+            random_color += hex[i];
+        }
+
+        return random_color;
+    }
+
+
+    st.addEventListener('click',function(){
+        
+        if(!intervalId){
+            intervalId = setInterval(() => {
+            bg.style.backgroundColor = randomColor();
+        }, 1000);
+        }
+
+       
+    });
+
+    stp.addEventListener('click',function(){
+        clearInterval(intervalId);
+        intervalId = null;
+    })
+</script>
+
+</html>
