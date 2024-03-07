@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Detector</title>
+
+    <style>
+        body {
+            background-color: rgb(183, 239, 239);
+            text-align: center;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="insert">
+        <div class="key">
+            <h1>Press the key and watch the magic</h1>
+        </div>
+    </div>
+</body>
+
+<!-- <table style="">
+    
+</table> -->
+
+<script>
+
+
+    const tbl = document.getElementById('insert');
+
+    window.addEventListener('keydown', function (e) {
+        tbl.innerHTML = `
+        <table style="border-style: double; border: 2px solid red; background-color: white; color: black; height: 100px; width: 400px;">
+            <th>
+                <td>Key</td>
+                <td>KeyCode</td>
+                <td>Code</td>
+            </th>
+            <tr>
+                
+                <td></td>
+                <td>${e.key === " " ? "Space" : e.key}</td>
+                <td>${e.keyCode}</td>
+                <td>${e.code}</td>
+            </tr>
+        </table>
+        `
+    })
+
+
+</script>
+
+</html>
