@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to API</title>
+</head>
+<body>
+    
+    <h1>Learning APIs......</h1>
+</body>
+
+<script>
+
+    const api_url = 'https://api.github.com/users/ujaslathiya'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',api_url);
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+
+        if (xhr.readyState === 4) {
+            
+            const data = JSON.parse(xhr.responseText);
+            console.log(data.html_url);
+        }
+    }
+    xhr.send();
+
+</script>
+</html>
